@@ -20,7 +20,7 @@ V2 PCBs were only used in the 3rd GB round (R3). To confirm which version you ne
 
 1. Log into, or sign up for, your personal GitHub account.
 2. Fork this repository to your local computer, and then push it to your GitHub personal account. ([instructions](https://docs.github.com/en/get-started/quickstart/fork-a-repo))
-3. Edit the keymap file(s) to suit your needs
+3. Edit the keymap file(s) to suit your needs.
 4. Commit and push your changes to your personal repo. Upon pushing it, GitHub Actions will start building a new version of your firmware with the updated keymap.
 
 ## Firmware Files
