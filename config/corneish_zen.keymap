@@ -20,6 +20,13 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
             };
+            td_lt: tap_dance_layer_tap {
+		compatible = "zmk,behavior-tap-dance";
+		label = "TAP_DANCE_LAYER_TAP";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&lt 1 BSPC>, <&kp BSPC>;
+	    };
         };
         
         combos {
@@ -47,10 +54,10 @@
 // |  XXX |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | XXX  |
 //                    | ESC | BSPC| TAB |   | CAP | SPC  | ENT |
                         bindings = <
-   &kp TAB    &kp Q   &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-   &kp CAPS   &hm LSHIFT A  &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm RGUI J  &hm RALT K     &hm RCTRL L   &hm RSHIFT SEMI &kp SQT
+        &kp TAB &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P   &kp BSLH
+	&kp CAPS &hm LSHIFT A  &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm RGUI J  &hm RALT K     &hm RCTRL L   &hm RSHIFT SEMI &kp SQT
    &kp MINUS  &kp Z   &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp EQUAL
-                  &mt LGUI ESC &lt 1 BSPC &lt 2 TAB   &kp CAPS &lt 1 SPACE &lt 2 ENTER
+                  &mt LGUI ESC &td_lt &lt 2 TAB   &kp CAPS &lt 1 SPACE &lt 2 ENTER
                         >;
                 };
                 lower_layer {
