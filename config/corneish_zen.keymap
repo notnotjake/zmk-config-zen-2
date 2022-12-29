@@ -64,6 +64,16 @@
 							key-positions = <13 14>;
 							bindings = <&kp C_VOL_DN>;
 						};
+						combo_VOL_MUTE {
+							timeout-ms = <50>;
+							key-positions = <25 26>;
+							bindings = <&kp C_MUTE>;
+						};
+						combo_VOL_UP {
+							timeout-ms = <50>;
+							key-positions = <1 2>;
+							bindings = <&kp C_VOL_UP>;
+						};
 				};
 				
 				keymap {
