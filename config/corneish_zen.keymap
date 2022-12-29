@@ -56,17 +56,17 @@
 						};
 						combo_VOL_UP {
 							timeout-ms = <50>;
-							key-positions = <1 2>;
+							key-positions = <0 1>;
 							bindings = <&kp C_VOL_UP>;
 						};
 						combo_VOL_DN {
 							timeout-ms = <50>;
-							key-positions = <13 14>;
+							key-positions = <12 13>;
 							bindings = <&kp C_VOL_DN>;
 						};
 						combo_VOL_MUTE {
 							timeout-ms = <50>;
-							key-positions = <25 26>;
+							key-positions = <24 25>;
 							bindings = <&kp C_MUTE>;
 						};
 				};
