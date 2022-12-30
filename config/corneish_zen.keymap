@@ -69,6 +69,16 @@
 							key-positions = <24 25>;
 							bindings = <&kp C_MUTE>;
 						};
+						combo_UP {
+							timeout-ms = <50>;
+							key-positions = <20 21>;
+							bindings = <&kp UP>;
+						};
+						combo_DOWN {
+							timeout-ms = <50>;
+							key-positions = <32 33>;
+							bindings = <&kp DOWN>;
+						};
 				};
 				
 				keymap {
